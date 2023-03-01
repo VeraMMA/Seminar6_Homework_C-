@@ -32,9 +32,13 @@ namespace homework
         {
             double x = (b1 - b2) / (k2 - k1);
             double y = (k2 * b1 - k1 * b2) / (k2 - k1);
-            if (k1 == k2) Console.Write("Заданные прямые не пересекаются!");
+            System.Console.WriteLine($" ({x}; {y})");
+            if (k1 == k2)
+            {
+                Console.Write("Прямые совпадают");
+            }
             else
-                Console.Write($"Точка пересечения заданных прямых: ({x}; {y})");
+                Console.Write("Прямые параллельны");
         }
 
 
